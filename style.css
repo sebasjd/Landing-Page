@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(178, 175, 175);
+  background: linear-gradient(
+    90deg,
+    rgb(142, 142, 142) 0%,
+    rgb(218, 219, 204) 48%,
+    rgb(174, 173, 173) 100%
+  );
+}
+
+nav {
+  background-color: rgb(22, 22, 22);
+  height: 5rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav .logo {
+  color: rgb(140, 150, 2);
+  min-width: 7rem;
+  display: flex;
+  z-index: 1;
+  font-size: 4rem;
+  margin-right: 4rem;
+}
+
+nav a {
+  color: rgb(222, 219, 157);
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+}
+
+
+.links {
+  justify-content: space-between;
+  display: flex;
+  padding-right: 5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.links a {
+  transition: 0.2s;
+}
+
+.links a:hover {
+  border-bottom: 0.3rem solid yellow;
+  padding-bottom: 0.2rem;
+  color: black;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow,
+    0 0 1rem yellow;
+  margin-bottom: -0.5rem;
+  cursor: pointer;
+}
+
+.redes a {
+  display: block;
+  width: 4rem;
+}
+
+.redes {
+  position: absolute;
+  background-color: rgba(22, 22, 22, 1);
+  right: 0%;
+  top: 3.55rem;
+  width: 10rem;
+  height: 5rem;
+  display: none;
+  padding-top: 1rem;
+  border-radius: 10%;
+}
+
+.redes a {
+  margin-bottom: 1rem;
+  color: rgb(222, 219, 157);
+  transition-property: all;
+  transition-duration: .2s;
+}
+
+.redes a:hover {
+  border-bottom: 0.3rem solid yellow;
+  padding-bottom: 0.2rem;
+  color: black;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow,
+    0 0 1rem yellow;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+
+.REDES:hover ~ .redes,
+.links .redes:hover{
+  display: block;
+}
+
